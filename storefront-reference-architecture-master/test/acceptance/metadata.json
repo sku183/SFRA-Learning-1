@@ -1,0 +1,189 @@
+{
+    "include": {
+        "data": "./test/acceptance/metadata.json",
+        "homePage": "./test/acceptance/pages/home.page.js",
+        "productPage": "./test/acceptance/pages/product.page.js",
+        "cartPage": "./test/acceptance/pages/cart.page.js",
+        "checkoutPage": "./test/acceptance/pages/checkout.page.js",
+        "loginPage": "./test/acceptance/pages/login.page.js",
+        "accountPage": "./test/acceptance/pages/account.page.js",
+        "pageDesigner": "./test/acceptance/pages/pageDesigner.page.js",
+        "utilities": "./test/acceptance/utilities.js"
+    },
+    "gherkin_steps": [
+        "./test/acceptance/steps/homePage/addProductToCart.steps.js",
+        "./test/acceptance/steps/homePage/emailSignup.steps.js",
+        "./test/acceptance/steps/homePage/landHomePage.steps.js",
+        "./test/acceptance/steps/productDetailPage/pdpSimpleLayout.steps.js",
+        "./test/acceptance/steps/productDetailPage/pdpQuickViewSearch.steps.js",
+        "./test/acceptance/steps/productDetailPage/pdpProductFilter.steps.js",
+        "./test/acceptance/steps/checkoutPage/editCart.steps.js",
+        "./test/acceptance/steps/loginPage/checkOrder.steps.js",
+        "./test/acceptance/steps/loginPage/createAccount.steps.js",
+        "./test/acceptance/steps/loginPage/loginUser.steps.js",
+        "./test/acceptance/steps/accountPage/editProfile.steps.js",
+        "./test/acceptance/steps/accountPage/changePassword.steps.js",
+        "./test/acceptance/steps/accountPage/addPayment.steps.js",
+        "./test/acceptance/steps/accountPage/addAddress.steps.js",
+        "./test/acceptance/steps/testSuites/happyPath.steps.js",
+        "./test/acceptance/steps/utilities.steps.js",
+        "./test/acceptance/steps/pageDesigner/campaignBanner/campaignBanner.steps.js",
+        "./test/acceptance/steps/pageDesigner/mainBanner/mainBanner.steps.js",
+        "./test/acceptance/steps/pageDesigner/popularCategory/popularCategory.steps.js",
+        "./test/acceptance/steps/pageDesigner/category/category.steps.js",
+        "./test/acceptance/steps/pageDesigner/imageAndText/imageAndText.steps.js",
+        "./test/acceptance/steps/pageDesigner/photoTile/photoTile.steps.js",
+        "./test/acceptance/steps/pageDesigner/productTile/productTile.steps.js",
+        "./test/acceptance/steps/pageDesigner/shopCategory/shopCategory.steps",
+        "./test/acceptance/steps/pageDesigner/richText/richText.steps.js",
+        "./test/acceptance/steps/pageDesigner/shopTheLook/shopTheLook.steps.js",
+        "./test/acceptance/steps/pageDesigner/carousel/carousel.steps.js"
+    ],
+    "user1": {
+        "fName": "John",
+        "lName": "Smith",
+        "address1": "123 Main Street",
+        "address2": "Apt 01",
+        "country": "United States",
+        "state": "Massachusetts",
+        "stateAbr": "MA",
+        "city": "Burlington",
+        "zip": "11111",
+        "phone": "5555555555",
+        "email": "jsmith@email.com",
+        "password": "Password123!"
+    },
+    "CC": {
+        "ccNum": "4111111111111111",
+        "ccSecCode": "555",
+        "expMonth": "08",
+        "expYear": "2023",
+        "ccExpDate": "8/2023"
+    },
+    "product": {
+        "name": "Elbow Sleeve Ribbed Sweater",
+        "quantity": "2",
+        "editCartQuantity": "1",
+        "itemPrice": "$65.99",
+        "totalItemPrice": "$131.98",
+        "shipping": "$7.99",
+        "tax": "$7.00",
+        "estimatedTotal": "$146.97"
+    },
+    "product2": {
+        "name": "Modern Striped Dress Shirt",
+        "quantity": "1",
+        "color": "blue",
+        "size": "16R"
+    },
+    "product3": {
+        "name": "Ribbed Cardigan.",
+        "quantity": "1",
+        "color": "Ivory",
+        "size": "M",
+        "productLinkQV": "/on/demandware.store/Sites-RefArch-Site/en_US/Product-ShowQuickView?pid=25697194M"
+    },
+    "searchPages": {
+        "womensTops": "/on/demandware.store/Sites-RefArch-Site/en_US/Search-Show?cgid=womens-clothing-tops"
+    },
+    "orderHistory": {
+        "number": "00004201",
+        "email": "jsmith@email.com",
+        "zip": "11111"
+    },
+    "filterProduct": {
+        "color": "white",
+        "colorTotalItems": "79 Results",
+        "size": "12",
+        "sizeTotalItems": "11 Results",
+        "price": "$20 - $49.99",
+        "priceTotalItems": "2 Results"
+    },
+    "home": {
+        "email": "test@user.com"
+    },
+    "login": {
+        "loginPage": "/on/demandware.store/Sites-RefArch-Site/en_US/Account-Show?registration=false",
+        "homePage": "/on/demandware.store/Sites-RefArch-Site/en_US/Home-Show",
+        "email": "jsmith@email.com",
+        "password": "Password123!",
+        "fName": "John",
+        "lName": "Smith",
+        "phone": "5555555555",
+        "regEmail": "jsmith@email.com",
+        "loginHomeScreen": "span.user-message",
+        "emailLogin": "#login-form-email",
+        "passwordLogin": "#login-form-password",
+        "primaryButton": ".btn.btn-block.btn-primary"
+    },
+    "checkout": {
+        "fName": "John",
+        "lName": "Smith",
+        "address1": "123 Main Street",
+        "address2": "Apt 01",
+        "country": "United States",
+        "state": "Massachusetts",
+        "stateAbr": "MA",
+        "city": "Burlington",
+        "zip": "11111",
+        "phone": "5555555555",
+        "email": "jsmith@email.com",
+        "ccNum": "4111111111111111",
+        "ccSecCode": "555",
+        "expMonth": "08",
+        "expYear": "2023",
+        "ccExpDate": "8/2023"
+    },
+    "account": {
+        "name": "John Smith",
+        "addressTitle": "Apartment",
+        "newPassword": "Password123!"
+    },
+    "pageDesigner": {
+        "richTextTitle" : "What's New Trending",
+
+        "shopTheLookOverlayText": "Spring Look",
+        "shopTheLookSetItems": "3 Items",
+        "shopTheLookButton": "Shop The Look",
+        "shopTheLookProductName": "Short Sleeve Raglan Smock Shirt.",
+
+        "imageAndTextOverlayText": "Summer Look",
+        "imageAndTextNewArrival": "/s/RefArch/new arrivals/?lang=default",
+        "campaignBannerMessage": "We're Taking Sale To the Next Level! 80% OFF!",
+
+        "category1": "Shoes",
+        "category2": "Scarves",
+        "category3": "Accessories",
+        "category4": "Men's New Arrivals",
+        "category5": "Women's New Arrivals",
+        "categoryLink": "/s/RefArch/womens/?lang=default",
+
+        "mainBannerHeading": "Dresses\nfor\nBesties",
+        "mainBannerHeading2":"Summer Sales",
+        "mainBannerSubHeading": "Shop Now",
+        "mainBannerLink": "/s/RefArch/womens/clothing/dresses/?lang=default",
+
+        "popularCategory1": "Outfits",
+        "popularCategory2": "Tops",
+        "popularCategory3": "Dresses",
+        "popularCategory4": "Bottoms",
+        "popularCategory5": "Jackets & Coats",
+        "popularCategory6": "Feeling Red",
+
+        "productTileQuickView": "Quick Shop",
+        "productTileProductName": "Floral Print Pencil Skirt.",
+        "productTileProductName5": "Incase",
+        "productTile1ProductPrice": "$129.00",
+        "productTile3ProductStrikeThroughPrice": "$59.00",
+        "productTile3ProductPrice": "$43.99",
+        "productTile1PDPLink": "/s/RefArch/floral-print-pencil-skirt/25696881M.html?lang=default",
+
+        "shopCategory1": "Women's New Arrivals",
+        "shopCategory2": "Men's New Arrivals",
+        "shopCategory3": "Shoes",
+        "shopCategory4": "Scarves",
+        "shopCategory5": "Accessories",
+        "shopCategoryTitle": "Shop Category",
+        "shopCategoryLink": "/s/RefArch/womens/accessories/shoes/?lang=default"
+    }
+}
